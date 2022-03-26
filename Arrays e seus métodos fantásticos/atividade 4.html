@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 4</title>
+</head>
+<body>
+    <script>
+    // 4. Machado de Assis!Foi um escritor brasileiro, considerado por muitos críticos, estudiosos, escritores e leitores o maior nome da literatura brasileira. A sua lista de obras: Romances//
+    /*Memorial de Aires (1908)
+Ressurreição (1872)
+Casa Velha (1885)
+Memórias Póstumas de Brás Cubas (1881)
+Helena (1876)
+Quincas Borba (1891)
+Esaú e Jacó (1904)
+A mão e a luva (1874)
+Dom Casmurro (1899)
+Iaiá Garcia (1878)
+
+Coletânea de Poesias
+Americanas (1875)
+Ocidentais (1880)
+Falenas (1870)
+Crisálidas (1864)
+Poesias Completas (1901)
+
+Coletânea de contos
+Várias Histórias (1896)
+Histórias sem Data (1884)
+Papéis Avulsos (1882)
+Contos Fluminenses (1870)
+Histórias da Meia-Noite (1873)
+Relíquias de Casa Velha (1906)
+Páginas Recolhidas (1899)
+Para cada um dos grupos de obras abaixo, ordene e crie um array com as obras.
+Agora, ainda utilizando código, crie mais um array e insira os três primeiros livros de cada grupo de obras.*/
+
+     //obras de machado de assis//
+     
+    var Romances = ["Memorial de Aires (1908) ", " Ressurreição (1872) ", " Casa Velha (1885) ", " Memórias Póstumas de Brás Cubas (1881) ", " Helena (1876) ", " Quincas Borba (1891) "," Esaú e Jacó (1904) ", " A mão e a luva (1874) ", " Dom Casmurro (1899) "," Iaiá Garcia (1878)." ];
+    var Poesias = ["Americanas (1875) ", " Ocidentais (1880) ", " Falenas (1870) ", " Crisálidas (1864) ", " Poesias Completas (1901)." ];
+    var Contos = ["Várias Histórias (1896) ", " Histórias sem Data (1884) ", " Papéis Avulsos (1882) ", " Contos Fluminenses (1870) ", " Histórias da Meia-Noite (1873) ", " Relíquias de Casa Velha (1906) "," Páginas Recolhidas (1899)."];
+    alert("Dentre as obras de machado de assis, as de romance foram: " + Romances);
+    alert("Dentre as obras de machado de assis, as de poesias foram: " + Poesias);
+    alert("Dentre as obras de machado de assis, as de contos foram: " + Contos);
+
+    //Separação dos 3 primeiros de cada array//
+
+    Romances.splice(3,7);
+    alert(Romances);
+    Poesias.splice(3,2);
+    alert(Poesias);
+    Contos.splice(3,4);
+    alert(Contos);
+    var tresPrimeiros = Romances.concat(Poesias,Contos);
+    alert("Os três primeiros de cada grupo de obra são: "+ tresPrimeiros + ".");
+    </script>
+</body>
+</html>

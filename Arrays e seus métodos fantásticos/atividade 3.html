@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 3</title>
+</head>
+<body>
+    <script>
+    // 3. Drofo e Topper estão em uma aventura mágica. Faça um programa que contenha um inventário para cada um dos dois aventureiros - esse inventário será um array. Drofo terá um anel da invisibilidade, dois pares de botas mágicas, uma poção do sono e duas poções da inocência em seu inventário e nessa ordem. Torper terá uma capa da invisibilidade, uma pedra do despertar,  uma varinha das varinhas, uma poção da inocência e duas poções da mentira, poção anti-inteligência e nessa ordem. No meio de sua jornada, Torper consumiu uma das poções da mentira, perdeu sua pedra e ganhou um par de botar mágicas do Drofo, achou um escudo mágico e uma espada mágica. Descreva cada uma das ações acima. utilizando código (utilize comentários para ficar mais claro). No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.Descreva cada uma das ações acima. utilizando código.Exiba o resultado final de cada um dos inventários utilizando "document.write"//
+
+     
+    var drofo = ["anel da invisibilidade ", " botas mágicas ", " botas mágicas", " poção do sono ", " poção da inocência"];
+    var topper = ["capa da invisibilidade ", " pedra do despertar ", " varinha das varinhas ", " poção da inocência ", " poção da mentira ", " poção da mentira ", " poção anti-inteligência"];
+
+    alert("As aventuras de Drofo e Topper");
+    alert("Ao começo dessa aventura Drofo tem em sua mochila os seguintes itens: " + drofo);
+    alert("Já Drofo tem em sua mochila os seguintes itens: " + topper);
+
+    //Topper consome uma de suas poções da mentira e perde a pedra do despertar//
+    topper.splice(1,1);
+    topper.splice(4,1);
+    
+    alert("Em meio a jornada dos dois, eles precisam enganar um grupo de monstros, para isso Topper toma uma de suas poções da mentira, eles conseguem tal feito!\n Após passado um tempo, topper percebe que acabou perdendo sua pedra do despertar em algum momento da aventura.\n Agora sua mochila está assim: " + topper);
+
+    //Topper ganha um par de botas magicas, acha um escudo e uma espada magica //
+    
+    drofo.splice(1,1);
+    topper.push("botas mágicas");
+    topper.push("escudo mágico", "espada mágica");
+    alert("Ao ver seu amigo cabisbaixo, drofo tenta anima-lo oferecendo como recompensa por ter enganado os inimigos, um de seus pares de botas mágicas.\nMas parece que a sorte agora sorri para topper, além do presente do amigo, ele encontra um baú e ao abri-lo, uma espada e escudo mágicos se revelam dentro. Agora seu inventário está assim: " + topper);
+
+    //Drofo ganhou mais uma bota mágica, usou sua poção do sono. //
+
+    drofo.push(" botas mágicas");
+    drofo.splice(2,1);
+    alert("Agora o lado da história resolve pender para drofo, em seu caminho ele encontra outro par de botas mágicas, mas precisou enfrentar 3 inimigos para consegui-las, enfrentar não seria bem a melhor palavra para descrever, ele utilizou sua poção do sono para lidar com os 3 combatentes de forma pacifica\n Sua mochila está agora com os seguintes itens: " + drofo);
+
+    //Drofo consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha//
+    topper.pop();
+    drofo.push(" ovo de dragão");
+    alert("Chegando perto do fim de sua jornada, os dois se deparam com um dragão caido, ambos estão em choque e sabem do perigo que é chegar perto de um dragão, portanto Drofo pede a poção anti-inteligencia do topper, para assim perder parte da inteligência, mas ganhar a coragem necessaria para ir até ele, o dragão explica que chegou sua hora, mas se preocupa com o que deixou em seu ninho, e pede que os dois aventureiros entreguem aquilo que acharem no ninho a senhora intendente da vila, que estará na taberna.\n Ao seguirem o caminho apontado encontram um ninho de dragão abandonado, e dentro dele um ovo de dragão, Drofo decide acatar o desejo do dragão e leva o ovo de dragão consigo. Sua mochila no momento está assim: " + drofo);
+    drofo.push(" coxinha");
+    alert("Seguindo o caminho com o ovo de dragão, drofo está decidido em levar o ovo de dragão até a intendente da vila. Após uma grande caminhada, enfim chegaram, exaustos, na taberna, lá acharam encontraram a intendente, entregado o ovo de dragão, ela os explica que a tradição antiga da vila era cuidar dos dragões e seus filhos, que são pacificos e defendem os habitantes dos bandidos e monstros. Bastou um olhar aos aventureiros que a intendente sabia como recompensa-los, com comida e acomodações para descansarem, e para a volta poderiam escolher qual comida levar, drofo escolheu a especialidade do vilarejo, coxinha. Com isso seu inventario está assim: " + drofo);
+    document.write('O inventario de ambos após o fim de sua aventura ficou assim: Topper: ', topper, '<br>', 'Já o de drofo: ', drofo, '<br>','Ambos chegaram em suas casas e contaram a suas familias de suas aventuras, que serão contadas para sempre')
+    
+
+
+
+    </script>
+</body>
+</html>
